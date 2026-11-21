@@ -1,0 +1,58 @@
+image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,face,gaze_zone,khác giá trị (IoU=0.78),other,road,ambiguous,4.5,"thảo luận: mine theo hướng nhìn uống nước (other), peer theo hướng đầu (road); giữ other"
+D01.png,face13,left_eye_outer.occluded,khác cờ,1,0,,,
+D01.png,face13,left_eye_inner.occluded,khác cờ,1,0,,,
+D01.png,face13,left_eye_upper.occluded,khác cờ,1,0,,,
+D01.png,face13,left_eye_lower.occluded,khác cờ,1,0,,,
+D02.png,person,seatbelt,khác giá trị (IoU=0.93),worn_correct,unknown,mine,4.7,"giữ nguyên mine (thấy rõ dải chéo qua vai)"
+D03.png,face,gaze_zone,khác giá trị (IoU=0.78),road,cluster,,,
+D03.png,face13,mouth_right.occluded,khác cờ,1,0,,,
+D04.png,face,gaze_zone,khác giá trị (IoU=0.97),other,mirror_l,,,
+D04.png,person,seatbelt,khác giá trị (IoU=0.63),worn_incorrect,not_worn,,,
+D05.png,face,gaze_zone,khác giá trị (IoU=0.89),road,cluster,,,
+D05.png,phone,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.7,"giữ nguyên mine (thấy rõ điện thoại áp tai, peer thiếu box phone)"
+D05.png,face13,left_eye_outer.occluded,khác cờ,0,1,,,
+D05.png,face13,left_eye_outer.outside,khác cờ,0,1,,,
+D05.png,face13,left_eye_inner.occluded,khác cờ,0,1,,,
+D05.png,face13,left_eye_inner.outside,khác cờ,0,1,,,
+D05.png,face13,left_eye_upper.occluded,khác cờ,0,1,,,
+D05.png,face13,left_eye_upper.outside,khác cờ,0,1,,,
+D05.png,face13,left_eye_lower.occluded,khác cờ,0,1,,,
+D05.png,face13,left_eye_lower.outside,khác cờ,0,1,,,
+D05.png,face13,right_eye_outer.occluded,khác cờ,0,1,,,
+D05.png,face13,right_eye_inner.occluded,khác cờ,0,1,,,
+D05.png,face13,right_eye_upper.occluded,khác cờ,0,1,,,
+D05.png,face13,right_eye_lower.occluded,khác cờ,0,1,,,
+D06.png,person,seatbelt,khác giá trị (IoU=0.97),worn_correct,worn_incorrect,mine,4.7,"giữ nguyên mine (dây vắt qua vai chéo xuống hông đúng quy cách)"
+D06.png,face,eye_left,khác giá trị (IoU=0.87),unknown,closed,mine,4.4-1,"giữ nguyên mine (mắt dưới đốm phản xạ ghi unknown, peer đoán closed là sai)"
+D06.png,face,eye_right,khác giá trị (IoU=0.87),unknown,closed,mine,4.4-1,"giữ nguyên mine (mắt dưới đốm phản xạ ghi unknown)"
+D06.png,face,gaze_zone,khác giá trị (IoU=0.87),road,center,,,
+D06.png,face13,left_eye_outer.occluded,khác cờ,1,0,,,
+D06.png,face13,left_eye_inner.occluded,khác cờ,1,0,,,
+D06.png,face13,left_eye_upper.occluded,khác cờ,1,0,,,
+D06.png,face13,left_eye_lower.occluded,khác cờ,1,0,,,
+S01_ir.png,face,eye_right,khác giá trị (IoU=0.94),open,unknown,,,
+S01_ir.png,face,gaze_zone,khác giá trị (IoU=0.94),lap,other,,,
+S01_ir.png,face,glasses,khác giá trị (IoU=0.94),none,unknown,,,
+S01_rgb.png,frame_meta,light,khác giá trị,day,unknown,,,
+S01_rgb.png,object,seat,khác giá trị (IoU=0.95),driver,rear_middle,peer,4.3,"sửa mine thành rear_middle (ghế sau không thể là driver)"
+S01_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S02_ir.png,child_seat,occupied,khác giá trị (IoU=0.97),yes,unknown,mine,4.8,"mine giữ yes vì ghế có hình nộm trẻ em thực tế (đã cập nhật cabin_schema.py theo coach); peer để unknown"
+S02_rgb.png,frame_meta,light,khác giá trị,day,unknown,,,
+S02_rgb.png,child_seat,occupied,khác giá trị (IoU=0.95),yes,unknown,mine,4.8,"mine giữ yes vì ghế có trẻ em thực tế (đã cập nhật schema theo coach)"
+S03_ir.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,,,
+S03_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S03_rgb.png,frame_meta,light,khác giá trị,day,unknown,peer,4.4-1,"sửa mine thành unknown (SVIRO là ảnh dựng đồ họa)"
+S03_rgb.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,,,
+S03_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S04_rgb.png,frame_meta,light,khác giá trị,day,unknown,,,
+S05_ir.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,,,
+S05_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S05_rgb.png,frame_meta,light,khác giá trị,day,unknown,,,
+S06_ir.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,,,
+S06_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S06_rgb.png,frame_meta,light,khác giá trị,day,unknown,,,
+S06_rgb.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,,,
+S06_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,,,
+S07_rgb.png,frame_meta,light,khác giá trị,day,unknown,,,
+S08_rgb.png,frame_meta,light,khác giá trị,day,unknown,,,

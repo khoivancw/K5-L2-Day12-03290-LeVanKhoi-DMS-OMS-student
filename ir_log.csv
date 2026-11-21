@@ -1,0 +1,5 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,"Mất hoàn toàn thông tin màu sắc so với ảnh RGB, đồ vật màu tối chìm vào bóng đổ trên mặt ghế",object.type,"Không thể nhận diện vật bằng màu sắc, chỉ nhận diện qua biên dạng hình khối; ghi type=other hoặc cup nếu thấy rõ quai cầm"
+S03_ir,IR_sim,"Dải dây an toàn và viền nệm ghế có độ phản xạ tương đương áo tối màu, khó phân biệt mép dây",person.seatbelt,"Tuân thủ quy chuẩn dataset SVIRO không có người cài dây, giữ not_worn hoặc unknown, không suy đoán từ ảnh màu RGB"
+D01,real_IR,"Ánh sáng NIR phản xạ mạnh trên thân chai nước nhựa trong suốt tạo đốm lóa nhưng không che khuất tay",hand.on_wheel / object,"DMS không gán nhãn object cho chai nước; tay cầm chai nước rời khỏi vô lăng được gán chính xác là on_wheel=no"
+D06,real_IR,"Đèn LED hồng ngoại 940nm chiếu vào mắt kính tạo đốm lóa sáng hình tròn che khuất vùng con ngươi",face.eye_left / face.eye_right,"Không thấy bờ mi khép và không thấy con ngươi dưới đốm lóa, ghi unknown kèm cờ occluded trên face13, không đoán closed"
